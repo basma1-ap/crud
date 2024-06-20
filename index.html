@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="home w-75 mx-auto p-3  ">
+        <h1 class="text-center">Hyper market</h1>
+        <div>
+            <label for="itemNameInput">Item Name :</label>
+            <input type="text" class="form-control " id="itemNameInput">
+        </div>
+        <div>
+            <label for="itemPriceInput">Item Price :</label>
+            <input type="text" class="form-control" id="itemPriceInput">
+        </div>
+        <div>
+            <label for="itemQuantityInput">Item Quantity :</label>
+            <input type="text" class="form-control" id="itemQuantityInput">
+        </div>
+        <div>
+            <label for="itemFeedbackInput">Item feedback :</label>
+            <input type="text" class="form-control" id="itemFeedbackInput">
+        </div>
+        
+            <button onclick="addItem()" class="btn btn-info mt-4 w-100" id='addBtn'>add item</button>
+            <button  class="btn btn-warning mt-4 w-100 d-none"  id="updateBtn" onclick="updateItems()" >update item</button>
+            
+        
+        <div>
+            <input class="form-control w-50 mx-auto mt-3" oninput="sreachitem()" type="search" id="searchInput" placeholder="search by name">
+        </div>
+
+        <table class="table text-center mt-4">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Feedback</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+
+        </table>
+
+
+    </div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
